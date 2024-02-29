@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -11,6 +12,8 @@ namespace Northwind.Entities.Concrete
     {
         public int ProductId { get; set; }
         public int CategoryId { get; set; }
+
+        [Required]
         public string ProductName { get; set; }
         public decimal UnitPrice { get; set; }
         public string QuantityPerUnit { get; set; }
